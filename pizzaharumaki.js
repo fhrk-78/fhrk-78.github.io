@@ -1,21 +1,29 @@
-class HelloWorld {
+class fhrk_pizzaextension {
     getInfo() {
       return {
-        id: 'helloworld',
-        name: 'It works!',
+        id: 'fhrk_pizzaextension',
+        name: 'PizzaN',
         blocks: [
           {
-            opcode: 'hello',
+            opcode: 'kosoado_status',
             blockType: Scratch.BlockType.REPORTER,
-            text: 'Hello!'
+            text: 'こそあど'
+          },
+          {
+            opcode: 'ph_status',
+            blockType: Scratch.BlockType.REPORTER,
+            text: 'ぴざはるまき'
           }
         ]
       };
     }
   
-    hello() {
-      return 'World!';
+    kosoado_status() {
+      return '生存';
+    }
+    ph_status() {
+      return 'ギリ生存';
     }
   }
   
-  Scratch.extensions.register(new HelloWorld());
+  Scratch.extensions.register(new fhrk_pizzaextension());
