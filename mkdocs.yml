@@ -1,0 +1,47 @@
+site_name: PizzaHarumaki site
+copyright: "&copy; 2022 PizzaHarumaki"
+
+docs_dir: "scr"
+site_dir: "docs"
+
+theme:
+  name: material
+  palette:
+  - scheme: default
+    primary: blue
+    toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    font:
+      text: Noto Sans JP
+      code: Inconsolata
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+
+plugins:
+  search:
+    lang: 'ja'
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/mebiusbox2
+      name: mebiusbox2 on Twitter
+    - icon: fontawesome/brands/github
+      link: https://github.com/mebiusbox/MkDocsTest
