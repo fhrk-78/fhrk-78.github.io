@@ -40,19 +40,22 @@ p.about {
     }    
 }
 
-li {
-    list-style: none;
-    p {
-        font-size: 1.2rem;
-    }
-    a {
+a {
     text-decoration: none;
     color: black;
     transition: 0.3s;
-    font-size: 1.7rem;
-        &:hover {
-            background-color: black;
-            color: white;
-        }
+    &:hover {
+        background-color: black;
+        color: white;
+    }
+}
+
+ul.a li {
+    list-style: none;
+    a.l {
+        font-size: 1.7rem;
+    }
+    p {
+        font-size: 1.2rem;
     }
 }

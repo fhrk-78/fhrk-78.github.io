@@ -40,19 +40,22 @@ p.about small {
   color: gray;
 }
 
-li {
-  list-style: none;
-}
-li p {
-  font-size: 1.2rem;
-}
-li a {
+a {
   text-decoration: none;
   color: black;
   transition: 0.3s;
-  font-size: 1.7rem;
 }
-li a:hover {
+a:hover {
   background-color: black;
   color: white;
+}
+
+li {
+  list-style: none;
+}
+li a.l {
+  font-size: 1.7rem;
+}
+li p {
+  font-size: 1.2rem;
 }/*# sourceMappingURL=main.css.map */
