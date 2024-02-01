@@ -40,6 +40,20 @@ p.about small {
   color: gray;
 }
 
+p.abouttop {
+  padding-top: 50px;
+  font-size: 1.5rem;
+  color: dimgrey;
+}
+p.abouttop span {
+  font-size: 0.9rem;
+  color: black;
+}
+p.abouttop small {
+  font-size: 0.9rem;
+  color: gray;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -50,12 +64,49 @@ a:hover {
   color: white;
 }
 
-li {
+a.s {
+  background-color: transparent;
+}
+
+ul.a li {
   list-style: none;
 }
-li a.l {
+ul.a li a.l {
   font-size: 1.7rem;
 }
-li p {
+ul.a li p a {
   font-size: 1.2rem;
+}
+
+ul.b {
+  height: 500px;
+  width: 300px;
+  overflow-y: scroll;
+}
+ul.b li {
+  list-style: none;
+}
+ul.b li img {
+  border-radius: 50px;
+  width: 200px;
+  height: 200px;
+  transition: all 0.3s linear;
+  background-color: white;
+  margin-top: 40px;
+  box-shadow: 20px 20px 40px #bebebe, -20px -20px 40px #ffffff;
+}
+ul.b li img:hover {
+  box-shadow: 20px 20px 40px transparent, -20px -20px 40px transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #ff0345;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
 }/*# sourceMappingURL=main.css.map */
