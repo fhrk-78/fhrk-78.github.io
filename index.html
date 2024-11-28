@@ -3,53 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fhrk_ (日本語)</title>
+    <title class="l" data-zh_tw="fhrk_ (繁體中文)" data-en="fhrk_ (English)" data-eo="fhrk_ (esperanto)">fhrk_ (日本語)</title>
     <link rel="stylesheet" href="main.css">
     <link rel="icon" href="./icon.ico" />
 </head>
 <body>
     <div class="container">
         <main>
-            <span class="noto-color-emoji-regular"><a href="/">🇯🇵 日本語</a> / <a href="/en">🇺🇸🇬🇧 English</a> / <a href="/tw">🇹🇼 繁體中文</a> / <a href="/eo">Esperanto</a></span>
-            <h1>こんにちは、私はfhrk_です。</h1>
-            <h2>自己紹介</h2>
-            <p>
+            <select id="selectlang">
+                <option value="ja" selected>日本語</option>
+                <option value="zh_tw">繁體中文</option>
+                <option value="en">English</option>
+                <option value="eo">Esperanto</option>
+            </select>
+            <h1 class="l" data-zh_tw="您好，我是 fhrk_。" data-en="Hi there, I'm fhrk_" data-eo="Saluton, mi estas fhrk_" data-ja="こんにちは、私はfhrk_です。">
+                こんにちは、私はfhrk_です。</h1>
+            <h2 class="l" data-zh_tw="自我介紹" data-en="About me" data-eo="Pri mi" data-ja="自己紹介">自己紹介</h2>
+            <p class="l" data-zh_tw="亦稱為 Pizaharumaki(ぴざはるまき) 和 Pizapeli(ぴざぺり)<br/>我喜歡 Minecraft。<br/>* 親愛的台灣人，我的許多專案都是日文或英文..."
+                data-en="a.k.a. Pizaharumaki(ぴざはるまき) And Pizapeli(ぴざぺり)<br/>I like Minecraft."
+                data-eo="alinome Pizaharumaki(ぴざはるまき) Kaj Pizapeli(ぴざぺり)<br/>Mi ŝatas Minecraft.<br/>* Karaj Esperanto-amantoj, la plimulto de la Esperantaj vortoj sur ĉi tiu paĝo estas maŝintradukitaj. (Ankaŭ mi lernas Esperanton iom post iom!)"
+                data-ja="ぴざはるまきやぴざぺりとも呼ばれています。<br/>マインクラフトが好きです。">
                 ぴざはるまきやぴざぺりとも呼ばれています。<br/>
                 マインクラフトが好きです。
             </p>
-            <h2>作品</h2>
+            <h2 class="l" data-zh_tw="作品" data-en="Projects" data-eo="la laboro" data-ja="作品">作品</h2>
             <div class="projects">
                 <a class="project" rel="noopener noreferrer" target="_blank" href="https://www.spigotmc.org/resources/askgiveop.121021/" data-bgi="img/ago.png" data-repo="https://github.com/fhrk-78/askgiveop">
                     <span class="title">AskGiveOp</span>
-                    <p class="description">
+                    <p class="description l"
+                        data-zh_tw="本外掛在讓使用者成為 Operator 時，需要多位 Operator 授權。如果您要建立新伺服器，請在安裝外掛程式前事先授予 Operators 權限。"
+                        data-en="This plugin requires approval from multiple OPs when making a user an OP. If you are creating a new server, please grant OPs in advance before installing the plugin."
+                        data-eo="Ĉi tiu kromaĵo postulas aprobon de pluraj OP-oj kiam uzanto faras OP. Se vi kreas novan servilon, bonvolu doni OP-ojn antaŭ ol instali la kromprogramon."
+                        data-ja="このプラグインはユーザーをOPにする時に複数のOPからの承認が必要にするプラグインです。 新しくサーバーを作成する場合はプラグインを入れる前に事前にOPを付与しておいてください。">
                         このプラグインはユーザーをOPにする時に複数のOPからの承認が必要にするプラグインです。 新しくサーバーを作成する場合はプラグインを入れる前に事前にOPを付与しておいてください。
                     </p>
                     <span class="tag">#Minecraft #SpigotPlugin</span>
                 </a>
                 <a class="project" rel="noopener noreferrer" target="_blank" href="https://fhrk-78.github.io/mcdiagonal-line-generator/" data-bgi="img/mdlg.png" data-repo="https://github.com/fhrk-78/mcdiagonal-line-generator">
-                    <span class="title">マイクラ斜め線生成機</span>
-                    <p class="description">
+                    <span class="title l"
+                        data-zh_tw="Minecraft 對角線產生器。" data-en="Minecraft Diagonal Line Generator" data-eo="Minecraft Diagonal Line Generator" data-ja="マイクラ斜め線生成機">マイクラ斜め線生成機</span>
+                    <p class="description l" data-zh_tw="程式會根據網格數和角度，輸出應使用何種圖案來建立對角線。(マイクラ斜め線生成機)"
+                        data-en="This program outputs the pattern to use when generating diagonal lines using a grid and an angle. (マイクラ斜め線生成機)"
+                        data-eo="Ĉi tiu programo eligas la ŝablonon por uzi dum generado de diagonalaj linioj uzante kradon kaj angulon. (マイクラ斜め線生成機)"
+                        data-ja="グリッド数と角度から斜め線を作るにはどのようなパターンにしたらいいか、を出力するプログラムです。">
                         グリッド数と角度から斜め線を作るにはどのようなパターンにしたらいいか、を出力するプログラムです。
                     </p>
                     <span class="tag">#Minecraft #Tools</span>
                 </a>
                 <a class="project" rel="noopener noreferrer" target="_blank" href="https://github.com/fhrk-78/combine-from-dynmap/blob/main/README.md" data-bgi="img/cfd.png" data-repo="https://github.com/fhrk-78/combine-from-dynmap">
                     <span class="title">Combine from Dynmap</span>
-                    <p class="description">
+                    <p class="description l"
+                        data-zh_tw="本程式使用 'Dynmap' 外掛程式產生高品質的世界地圖。"
+                        data-en="This program generates a high quality world map using 'Dynmap' plugin."
+                        data-eo="Ĉi tiu programo generas altkvalitan mondmapon per 'Dynmap' kromaĵo."
+                        data-ja="プラグイン「Dynmap」を利用して高画質の世界地図を生成するプログラムです。">
                         プラグイン「Dynmap」を利用して高画質の世界地図を生成するプログラムです。
                     </p>
                     <span class="tag">#Minecraft #Tools</span>
                 </a>
                 <a class="project" rel="noopener noreferrer" target="_blank" href="https://github.com/fhrk-78/SafetyWE/releases" data-bgi="img/swe.png" data-repo="https://github.com/fhrk-78/SafetyWE">
                     <span class="title">SafetyWE</span>
-                    <p class="description">
+                    <p class="description l"
+                        data-zh_tw="防止「WorldEdit」透過「WorldGuard」工作的外掛程式。 (非官方)"
+                        data-en="This spigot plugin prevents 'WorldEdit' from working through 'WorldGuard'. (Unofficial)"
+                        data-eo="Ĉi tiu krava kromaĵo malhelpas 'WorldEdit' funkcii per 'WorldGuard'. (Neoficiala)"
+                        data-ja="プラグイン「WorldEdit」が「WorldGuard」を貫通して動作してしまうのを防止するプラグイン。(非公式)">
                         プラグイン「WorldEdit」が「WorldGuard」を貫通して動作してしまうのを防止するプラグイン。(非公式)
                     </p>
                     <span class="tag">#Minecraft #SpigotPlugin</span>
                 </a>
                 <a class="project" rel="noopener noreferrer" target="_blank" href="https://www.spigotmc.org/resources/commandblockscopes.121018/" data-bgi="img/cbs.png" data-repo="https://github.com/fhrk-78/CommandBlockScopes">
                     <span class="title">CommandBlockScopes</span>
-                    <p class="description">
+                    <p class="description l"
+                        data-zh_tw="Spigot 外掛程式，可讓指令以放置指令區塊的人的身分執行。"
+                        data-en="This spigot plugin allows you to run commands as the person who placed the command block."
+                        data-eo="Ĉi tiu spigota kromaĵo permesas al vi ruli komandojn kiel la persono, kiu metis la komandblokon."
+                        data-ja="コマンドブロックを配置した人としてコマンドを実行できるようにするSpigotプラグイン。">
                         コマンドブロックを配置した人としてコマンドを実行できるようにするSpigotプラグイン。
                     </p>
                     <span class="tag">#Minecraft #SpigotPlugin</span>
