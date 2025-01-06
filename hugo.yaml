@@ -26,3 +26,4 @@ menu:
       weight: 20
 
 publishDir: docs
+relativeURLs: true
