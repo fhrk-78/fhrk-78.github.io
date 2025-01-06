@@ -1,0 +1,28 @@
+baseURL: https://fhrk-78.github.io/
+languageCode: ja-jp
+title: fhrk_
+theme: ["PaperMod"]
+
+params:
+  homeInfoParams:
+    Title: こんにちは！
+    Content: 私は学生で、趣味としてプログラミングを楽しんでいます🍕
+
+  socialIcons:
+    - name: "github"
+      url: "https://github.com/fhrk-78"
+    - name: "twitter"
+      url: "https://twitter.com/fhrk_7"
+
+menu:
+  main:
+    - identifier: projects
+      name: Projects
+      url: /projects/
+      weight: 10
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 20
+
+publishDir: docs

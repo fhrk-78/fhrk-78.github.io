@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>fhrk_</title><link>https://fhrk-78.github.io/</link><description>Recent content on fhrk_</description><generator>Hugo -- 0.140.2</generator><language>ja-jp</language><lastBuildDate>Mon, 06 Jan 2025 21:50:00 +0900</lastBuildDate><atom:link href="https://fhrk-78.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Projects</title><link>https://fhrk-78.github.io/projects/</link><pubDate>Mon, 06 Jan 2025 21:50:00 +0900</pubDate><guid>https://fhrk-78.github.io/projects/</guid><description>&lt;p>私が作ったものを紹介するページです。&lt;/p>
+&lt;h2 id="minecraft">Minecraft&lt;/h2>
+&lt;h3 id="escalatormc--spigot--121-">EscalatorMC [ Spigot | ^1.21 ]&lt;/h3>
+&lt;p>エスカレーターを追加するプラグインです。&lt;/p>
+&lt;p>看板を使ってエスカレーターを作成します。&lt;/p>
+&lt;p>Spigotでの動作を想定しています。(PaperやPurpurでも動くはずです)&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://www.spigotmc.org/resources/escalatormc.121679/">SpigotMC&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://modrinth.com/plugin/escalatormc">Modrinth&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/fhrk-78/escalatormc">Github&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="askgiveop--spigot--121-">AskGiveOp [ Spigot | ^1.21 ]&lt;/h3>
+&lt;p>&lt;img alt="AskGiveOp" loading="lazy" src="https://fhrk-78.github.io/images/ago.png">&lt;/p>
+&lt;p>このプラグインはユーザーをOPにする時に複数のOPからの承認が必要にするプラグインです。&lt;/p>
+&lt;p>※新しくサーバーを作成する場合はプラグインを入れる前に事前にOPを付与しておいてください。&lt;/p>
+&lt;p>&lt;code>config.yml&lt;/code>から必要な最低承認数を設定できます。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://www.spigotmc.org/resources/askgiveop.121021/">SpigotMC&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://modrinth.com/plugin/askgiveop">Modrinth&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/fhrk-78/askgiveop">Github&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="commandblockscopes--spigot--120121-">CommandBlockScopes [ Spigot | 1.20~1.21 ]&lt;/h3>
+&lt;p>&lt;img alt="CommandBlockScopes" loading="lazy" src="https://fhrk-78.github.io/images/cbs.png">&lt;/p>
+&lt;p>コマンドブロックを配置した人を記録して実行された時その人として実行できます&lt;/p>
+&lt;p>(&lt;a href="https://github.com/mfnalex/CustomBlockData">CustomBlockData&lt;/a>のおかげで実現できました！)&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://www.spigotmc.org/resources/commandblockscopes.121018/">SpigotMC&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://modrinth.com/plugin/commandblockscopes">Modrinth&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/fhrk-78/CommandBlockScopes">Github&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="safetywe--spigot--1204-">SafetyWE [ Spigot | 1.20.4 ]&lt;/h3>
+&lt;p>&lt;img alt="SafetyWE" loading="lazy" src="https://fhrk-78.github.io/images/swe.png">&lt;/p>
+&lt;p>あるマイクラ鯖で遊んでいる時にフラッグでWorldEditをDENYにしないとEngineHubのプラグイン:WorldEditで相手の土地も削れてしまう事が分かったので、それを防ぐためのプラグインです。&lt;/p>
+&lt;p>&lt;a href="https://github.com/fhrk-78/SafetyWE/releases">Download&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/fhrk-78/SafetyWE">Github&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="マイクラ斜め線生成機diagonalline-generator--webtool-">マイクラ斜め線生成機(DiagonalLine Generator) [ WebTool ]&lt;/h3>
+&lt;p>&lt;img alt="MC Diagonal Line generator" loading="lazy" src="https://fhrk-78.github.io/images/mdlg.png">&lt;/p>
+&lt;p>&lt;a href="https://fhrk-78.github.io/mcdiagonal-line-generator/">https://fhrk-78.github.io/mcdiagonal-line-generator/&lt;/a>&lt;/p>
+&lt;p>角度とグリッドから斜めの線を計算します。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/fhrk-78/mcdiagonal-line-generator">Github&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="combine-from-dynmap--pythonscript-">Combine From Dynmap [ PythonScript ]&lt;/h3>
+&lt;p>&lt;img alt="Combine From Dynmap" loading="lazy" src="https://fhrk-78.github.io/images/cfd.png">&lt;/p></description></item><item><title>First Post</title><link>https://fhrk-78.github.io/posts/first_post/</link><pubDate>Mon, 06 Jan 2025 21:30:17 +0900</pubDate><guid>https://fhrk-78.github.io/posts/first_post/</guid><description>&lt;p>SSGはHugo、ThemeはPaperModの力を借りて作りました。&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>A&lt;/th>
+&lt;th>B&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>テーブルですか&lt;/td>
+&lt;td>はい&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>本当ですか&lt;/td>
+&lt;td>いいえ&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>舐めてるんですか&lt;/td>
+&lt;td>いいえ&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;ol>
+&lt;li>P
+&lt;ol>
+&lt;li>l&lt;/li>
+&lt;li>a&lt;/li>
+&lt;li>n&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>D&lt;/li>
+&lt;li>C&lt;/li>
+&lt;li>A&lt;/li>
+&lt;/ol>
+&lt;h2 id="h2">H2&lt;/h2>
+&lt;h3 id="h3">H3&lt;/h3>
+&lt;h4 id="h4">H4&lt;/h4>
+&lt;h5 id="h5">H5&lt;/h5>
+&lt;h6 id="h6">H6&lt;/h6></description></item></channel></rss>
