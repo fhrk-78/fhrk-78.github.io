@@ -16,6 +16,7 @@ params:
       url: "https://twitter.com/fhrk_7"
   assets:
     disableFingerprinting: true
+    favicon: "favicon/favicon.ico"
 
   ShowShareButtons: true
   ShowReadingTime: true
@@ -43,6 +44,7 @@ menu:
       weight: 40
 
 publishDir: docs
+relativeURLs: true
 
 languages:
   ja:

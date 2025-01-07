@@ -10,8 +10,8 @@
 <meta name="description" content="Posts - fhrk_のメモ帳">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/posts/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link crossorigin="anonymous" href="../assets/css/stylesheet.css" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
 <link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
@@ -128,6 +128,26 @@
     Posts
   </h1>
 </header>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Hugoで詰まったことと解決方法
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>こんにちは、私がこのサイトを作る上でHugoで詰まったことを書いてます
+※前提条件をよく読んでください
+前提条件 Github Pages Theme: PaperMod Hugo v0.140.2 CSSが適用されない Hugo.yamlに
+parans: assets: disableFingerprinting: true ToC(目次)を追加する 記事の先頭に
+--- ~略~ ShowToc: true ~略~ --- サイトの言語を設定する 私はlanguageCodeというパラメータにja-jpを設定して「あれ、適用されないな」とか言ってました
+Hugo.yamlに
+DefaultContentLanguage: &#34;ja&#34; languages: ja: languageName: &#34;Japanese&#34; weight: 10 docs/に出力したい Hugo.yamlに
+publishDir: docs その他 static/フォルダはpublic/の中にそのまま配置されるようですので、心配しなくても大丈夫です。
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-01-07 10:10:00 +0900 JST'>1月 7, 2025</span>&nbsp;·&nbsp;1 分</footer>
+  <a class="entry-link" aria-label="post link to Hugoで詰まったことと解決方法" href="http://localhost:1313/posts/how2hugo/"></a>
+</article>
 
 <article class="post-entry"> 
   <header class="entry-header">
