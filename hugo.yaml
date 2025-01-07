@@ -1,7 +1,8 @@
 baseURL: https://fhrk-78.github.io/
 languageCode: ja-jp
-title: fhrk_
+title: fhrk_のメモ帳
 theme: ["PaperMod"]
+DefaultContentLanguage: "ja"
 
 params:
   homeInfoParams:
@@ -16,6 +17,12 @@ params:
   assets:
     disableFingerprinting: true
 
+  ShowShareButtons: true
+  ShowReadingTime: true
+  ShowBreadCrumbs: true
+  ShowPostNavLinks: true
+  ShowCodeCopyButtons: true
+
 menu:
   main:
     - identifier: projects
@@ -26,6 +33,18 @@ menu:
       name: Posts
       url: /posts/
       weight: 20
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 30
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 40
 
 publishDir: docs
-relativeURLs: true
+
+languages:
+  ja:
+    languageName: "Japanese"
+    weight: 10

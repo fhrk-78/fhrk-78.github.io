@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>fhrk_</title><link>https://fhrk-78.github.io/</link><description>Recent content on fhrk_</description><generator>Hugo -- 0.140.2</generator><language>ja-jp</language><lastBuildDate>Mon, 06 Jan 2025 21:50:00 +0900</lastBuildDate><atom:link href="https://fhrk-78.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Projects</title><link>https://fhrk-78.github.io/projects/</link><pubDate>Mon, 06 Jan 2025 21:50:00 +0900</pubDate><guid>https://fhrk-78.github.io/projects/</guid><description>&lt;p>私が作ったものを紹介するページです。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>fhrk_のメモ帳</title><link>https://fhrk-78.github.io/</link><description>Recent content on fhrk_のメモ帳</description><generator>Hugo -- 0.140.2</generator><language>ja</language><lastBuildDate>Mon, 06 Jan 2025 21:50:00 +0900</lastBuildDate><atom:link href="https://fhrk-78.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Projects</title><link>https://fhrk-78.github.io/projects/</link><pubDate>Mon, 06 Jan 2025 21:50:00 +0900</pubDate><guid>https://fhrk-78.github.io/projects/</guid><description>&lt;p>私が作ったものを紹介するページです。&lt;/p>
 &lt;h2 id="minecraft">Minecraft&lt;/h2>
 &lt;h3 id="escalatormc--spigot--121-">EscalatorMC [ Spigot | ^1.21 ]&lt;/h3>
 &lt;p>エスカレーターを追加するプラグインです。&lt;/p>
@@ -10,7 +10,7 @@
 &lt;li>&lt;a href="https://github.com/fhrk-78/escalatormc">Github&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h3 id="askgiveop--spigot--121-">AskGiveOp [ Spigot | ^1.21 ]&lt;/h3>
-&lt;p>&lt;img alt="AskGiveOp" loading="lazy" src="./images/ago.png">&lt;/p>
+&lt;p>&lt;img alt="AskGiveOp" loading="lazy" src="https://fhrk-78.github.io/images/ago.png">&lt;/p>
 &lt;p>このプラグインはユーザーをOPにする時に複数のOPからの承認が必要にするプラグインです。&lt;/p>
 &lt;p>※新しくサーバーを作成する場合はプラグインを入れる前に事前にOPを付与しておいてください。&lt;/p>
 &lt;p>&lt;code>config.yml&lt;/code>から必要な最低承認数を設定できます。&lt;/p>
@@ -20,7 +20,7 @@
 &lt;li>&lt;a href="https://github.com/fhrk-78/askgiveop">Github&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h3 id="commandblockscopes--spigot--120121-">CommandBlockScopes [ Spigot | 1.20~1.21 ]&lt;/h3>
-&lt;p>&lt;img alt="CommandBlockScopes" loading="lazy" src="./images/cbs.png">&lt;/p>
+&lt;p>&lt;img alt="CommandBlockScopes" loading="lazy" src="https://fhrk-78.github.io/images/cbs.png">&lt;/p>
 &lt;p>コマンドブロックを配置した人を記録して実行された時その人として実行できます&lt;/p>
 &lt;p>(&lt;a href="https://github.com/mfnalex/CustomBlockData">CustomBlockData&lt;/a>のおかげで実現できました！)&lt;/p>
 &lt;ul>
@@ -29,21 +29,21 @@
 &lt;li>&lt;a href="https://github.com/fhrk-78/CommandBlockScopes">Github&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h3 id="safetywe--spigot--1204-">SafetyWE [ Spigot | 1.20.4 ]&lt;/h3>
-&lt;p>&lt;img alt="SafetyWE" loading="lazy" src="./images/swe.png">&lt;/p>
+&lt;p>&lt;img alt="SafetyWE" loading="lazy" src="https://fhrk-78.github.io/images/swe.png">&lt;/p>
 &lt;p>あるマイクラ鯖で遊んでいる時にフラッグでWorldEditをDENYにしないとEngineHubのプラグイン:WorldEditで相手の土地も削れてしまう事が分かったので、それを防ぐためのプラグインです。&lt;/p>
 &lt;p>&lt;a href="https://github.com/fhrk-78/SafetyWE/releases">Download&lt;/a>&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://github.com/fhrk-78/SafetyWE">Github&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h3 id="マイクラ斜め線生成機diagonalline-generator--webtool-">マイクラ斜め線生成機(DiagonalLine Generator) [ WebTool ]&lt;/h3>
-&lt;p>&lt;img alt="MC Diagonal Line generator" loading="lazy" src="./images/mdlg.png">&lt;/p>
+&lt;p>&lt;img alt="MC Diagonal Line generator" loading="lazy" src="https://fhrk-78.github.io/images/mdlg.png">&lt;/p>
 &lt;p>&lt;a href="https://fhrk-78.github.io/mcdiagonal-line-generator/">https://fhrk-78.github.io/mcdiagonal-line-generator/&lt;/a>&lt;/p>
 &lt;p>角度とグリッドから斜めの線を計算します。&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://github.com/fhrk-78/mcdiagonal-line-generator">Github&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h3 id="combine-from-dynmap--pythonscript-">Combine From Dynmap [ PythonScript ]&lt;/h3>
-&lt;p>&lt;img alt="Combine From Dynmap" loading="lazy" src="./images/cfd.png">&lt;/p></description></item><item><title>First Post</title><link>https://fhrk-78.github.io/posts/first_post/</link><pubDate>Mon, 06 Jan 2025 21:30:17 +0900</pubDate><guid>https://fhrk-78.github.io/posts/first_post/</guid><description>&lt;p>SSGはHugo、ThemeはPaperModの力を借りて作りました。&lt;/p>
+&lt;p>&lt;img alt="Combine From Dynmap" loading="lazy" src="https://fhrk-78.github.io/images/cfd.png">&lt;/p></description></item><item><title>First Post</title><link>https://fhrk-78.github.io/posts/first_post/</link><pubDate>Mon, 06 Jan 2025 21:30:17 +0900</pubDate><guid>https://fhrk-78.github.io/posts/first_post/</guid><description>&lt;p>SSGはHugo、ThemeはPaperModの力を借りて作りました。&lt;/p>
 &lt;table>
 &lt;thead>
 &lt;tr>
