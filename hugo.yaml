@@ -1,6 +1,7 @@
 baseURL: https://fhrk-78.github.io/
 languageCode: ja-jp
 title: fhrk_のメモ帳
+descripion: 私は学生で、趣味としてプログラミングを楽しんでいます🍕
 theme: ["PaperMod"]
 DefaultContentLanguage: "ja"
 

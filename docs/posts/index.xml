@@ -1,98 +1,73 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Posts on fhrk_のメモ帳</title>
-    <link>https://fhrk-78.github.io/posts/</link>
-    <description>Recent content in Posts on fhrk_のメモ帳</description>
-    <generator>Hugo -- 0.140.2</generator>
-    <language>ja</language>
-    <lastBuildDate>Tue, 07 Jan 2025 10:10:00 +0900</lastBuildDate>
-    <atom:link href="https://fhrk-78.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Hugoで詰まったことと解決方法</title>
-      <link>https://fhrk-78.github.io/posts/how2hugo/</link>
-      <pubDate>Tue, 07 Jan 2025 10:10:00 +0900</pubDate>
-      <guid>https://fhrk-78.github.io/posts/how2hugo/</guid>
-      <description>&lt;p&gt;こんにちは、私がこのサイトを作る上でHugoで詰まったことを書いてます&lt;/p&gt;
-&lt;p&gt;※&lt;strong&gt;前提条件をよく読んでください&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;前提条件&#34;&gt;前提条件&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Github Pages&lt;/li&gt;
-&lt;li&gt;Theme: PaperMod&lt;/li&gt;
-&lt;li&gt;Hugo v0.140.2&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;cssが適用されない&#34;&gt;CSSが適用されない&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;Hugo.yaml&lt;/code&gt;に&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;parans&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;assets&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;disableFingerprinting&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;toc目次を追加する&#34;&gt;ToC(目次)を追加する&lt;/h2&gt;
-&lt;p&gt;記事の先頭に&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;~略~&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;ShowToc&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;~略~&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;サイトの言語を設定する&#34;&gt;サイトの言語を設定する&lt;/h2&gt;
-&lt;p&gt;私は&lt;code&gt;languageCode&lt;/code&gt;というパラメータにja-jpを設定して「あれ、適用されないな」とか言ってました&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;Hugo.yaml&lt;/code&gt;に&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;DefaultContentLanguage&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ja&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;languages&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;ja&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;languageName&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Japanese&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;weight&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;docsに出力したい&#34;&gt;&lt;code&gt;docs/&lt;/code&gt;に出力したい&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;Hugo.yaml&lt;/code&gt;に&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;publishDir&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;docs&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;その他&#34;&gt;その他&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;static/&lt;/code&gt;フォルダは&lt;code&gt;public/&lt;/code&gt;の中にそのまま配置されるようですので、心配しなくても大丈夫です。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>First Post</title>
-      <link>https://fhrk-78.github.io/posts/first_post/</link>
-      <pubDate>Mon, 06 Jan 2025 21:30:17 +0900</pubDate>
-      <guid>https://fhrk-78.github.io/posts/first_post/</guid>
-      <description>&lt;p&gt;SSGはHugo、ThemeはPaperModの力を借りて作りました。&lt;/p&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;A&lt;/th&gt;
-          &lt;th&gt;B&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;テーブルですか&lt;/td&gt;
-          &lt;td&gt;はい&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;本当ですか&lt;/td&gt;
-          &lt;td&gt;いいえ&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;舐めてるんですか&lt;/td&gt;
-          &lt;td&gt;いいえ&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;ol&gt;
-&lt;li&gt;P
-&lt;ol&gt;
-&lt;li&gt;l&lt;/li&gt;
-&lt;li&gt;a&lt;/li&gt;
-&lt;li&gt;n&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;D&lt;/li&gt;
-&lt;li&gt;C&lt;/li&gt;
-&lt;li&gt;A&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;h2&#34;&gt;H2&lt;/h2&gt;
-&lt;h3 id=&#34;h3&#34;&gt;H3&lt;/h3&gt;
-&lt;h4 id=&#34;h4&#34;&gt;H4&lt;/h4&gt;
-&lt;h5 id=&#34;h5&#34;&gt;H5&lt;/h5&gt;
-&lt;h6 id=&#34;h6&#34;&gt;H6&lt;/h6&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on fhrk_のメモ帳</title><link>https://fhrk-78.github.io/posts/</link><description>Recent content in Posts on fhrk_のメモ帳</description><generator>Hugo -- 0.140.2</generator><language>ja</language><lastBuildDate>Tue, 07 Jan 2025 10:10:00 +0900</lastBuildDate><atom:link href="https://fhrk-78.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugoで詰まったことと解決方法</title><link>https://fhrk-78.github.io/posts/how2hugo/</link><pubDate>Tue, 07 Jan 2025 10:10:00 +0900</pubDate><guid>https://fhrk-78.github.io/posts/how2hugo/</guid><description>&lt;p>こんにちは、私がこのサイトを作る上でHugoで詰まったことを書いてます&lt;/p>
+&lt;p>※&lt;strong>前提条件をよく読んでください&lt;/strong>&lt;/p>
+&lt;h2 id="前提条件">前提条件&lt;/h2>
+&lt;ul>
+&lt;li>Github Pages&lt;/li>
+&lt;li>Theme: PaperMod&lt;/li>
+&lt;li>Hugo v0.140.2&lt;/li>
+&lt;/ul>
+&lt;h2 id="cssが適用されない">CSSが適用されない&lt;/h2>
+&lt;p>&lt;code>Hugo.yaml&lt;/code>に&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yaml" data-lang="yaml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">parans&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">assets&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">disableFingerprinting&lt;/span>: &lt;span style="color:#66d9ef">true&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="toc目次を追加する">ToC(目次)を追加する&lt;/h2>
+&lt;p>記事の先頭に&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yaml" data-lang="yaml">&lt;span style="display:flex;">&lt;span>---
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">~略~&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">ShowToc&lt;/span>: &lt;span style="color:#66d9ef">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">~略~&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>---
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="サイトの言語を設定する">サイトの言語を設定する&lt;/h2>
+&lt;p>私は&lt;code>languageCode&lt;/code>というパラメータにja-jpを設定して「あれ、適用されないな」とか言ってました&lt;/p>
+&lt;p>&lt;code>Hugo.yaml&lt;/code>に&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yaml" data-lang="yaml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">DefaultContentLanguage&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;ja&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">languages&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">ja&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">languageName&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;Japanese&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">weight&lt;/span>: &lt;span style="color:#ae81ff">10&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="docsに出力したい">&lt;code>docs/&lt;/code>に出力したい&lt;/h2>
+&lt;p>&lt;code>Hugo.yaml&lt;/code>に&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yaml" data-lang="yaml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">publishDir&lt;/span>: &lt;span style="color:#ae81ff">docs&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="その他">その他&lt;/h2>
+&lt;p>&lt;code>static/&lt;/code>フォルダは&lt;code>public/&lt;/code>の中にそのまま配置されるようですので、心配しなくても大丈夫です。&lt;/p></description></item><item><title>First Post</title><link>https://fhrk-78.github.io/posts/first_post/</link><pubDate>Mon, 06 Jan 2025 21:30:17 +0900</pubDate><guid>https://fhrk-78.github.io/posts/first_post/</guid><description>&lt;p>SSGはHugo、ThemeはPaperModの力を借りて作りました。&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>A&lt;/th>
+&lt;th>B&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>テーブルですか&lt;/td>
+&lt;td>はい&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>本当ですか&lt;/td>
+&lt;td>いいえ&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>舐めてるんですか&lt;/td>
+&lt;td>いいえ&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;ol>
+&lt;li>P
+&lt;ol>
+&lt;li>l&lt;/li>
+&lt;li>a&lt;/li>
+&lt;li>n&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>D&lt;/li>
+&lt;li>C&lt;/li>
+&lt;li>A&lt;/li>
+&lt;/ol>
+&lt;h2 id="h2">H2&lt;/h2>
+&lt;h3 id="h3">H3&lt;/h3>
+&lt;h4 id="h4">H4&lt;/h4>
+&lt;h5 id="h5">H5&lt;/h5>
+&lt;h6 id="h6">H6&lt;/h6></description></item></channel></rss>
