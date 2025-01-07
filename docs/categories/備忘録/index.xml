@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>備忘録 on fhrk_のメモ帳</title>
-    <link>http://localhost:1313/categories/%E5%82%99%E5%BF%98%E9%8C%B2/</link>
+    <link>https://fhrk-78.github.io/categories/%E5%82%99%E5%BF%98%E9%8C%B2/</link>
     <description>Recent content in 備忘録 on fhrk_のメモ帳</description>
     <generator>Hugo -- 0.140.2</generator>
     <language>ja</language>
     <lastBuildDate>Tue, 07 Jan 2025 10:10:00 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/%E5%82%99%E5%BF%98%E9%8C%B2/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://fhrk-78.github.io/categories/%E5%82%99%E5%BF%98%E9%8C%B2/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugoで詰まったことと解決方法</title>
-      <link>http://localhost:1313/posts/how2hugo/</link>
+      <link>https://fhrk-78.github.io/posts/how2hugo/</link>
       <pubDate>Tue, 07 Jan 2025 10:10:00 +0900</pubDate>
-      <guid>http://localhost:1313/posts/how2hugo/</guid>
+      <guid>https://fhrk-78.github.io/posts/how2hugo/</guid>
       <description>&lt;p&gt;こんにちは、私がこのサイトを作る上でHugoで詰まったことを書いてます&lt;/p&gt;
 &lt;p&gt;※&lt;strong&gt;前提条件をよく読んでください&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;前提条件&#34;&gt;前提条件&lt;/h2&gt;

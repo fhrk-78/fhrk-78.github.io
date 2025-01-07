@@ -44,7 +44,6 @@ menu:
       weight: 40
 
 publishDir: docs
-relativeURLs: true
 
 languages:
   ja:

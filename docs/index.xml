@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>fhrk_のメモ帳</title>
-    <link>http://localhost:1313/</link>
+    <link>https://fhrk-78.github.io/</link>
     <description>Recent content on fhrk_のメモ帳</description>
     <generator>Hugo -- 0.140.2</generator>
     <language>ja</language>
     <lastBuildDate>Tue, 07 Jan 2025 10:10:00 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://fhrk-78.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugoで詰まったことと解決方法</title>
-      <link>http://localhost:1313/posts/how2hugo/</link>
+      <link>https://fhrk-78.github.io/posts/how2hugo/</link>
       <pubDate>Tue, 07 Jan 2025 10:10:00 +0900</pubDate>
-      <guid>http://localhost:1313/posts/how2hugo/</guid>
+      <guid>https://fhrk-78.github.io/posts/how2hugo/</guid>
       <description>&lt;p&gt;こんにちは、私がこのサイトを作る上でHugoで詰まったことを書いてます&lt;/p&gt;
 &lt;p&gt;※&lt;strong&gt;前提条件をよく読んでください&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;前提条件&#34;&gt;前提条件&lt;/h2&gt;
@@ -50,9 +50,9 @@
     </item>
     <item>
       <title>Projects</title>
-      <link>http://localhost:1313/projects/</link>
+      <link>https://fhrk-78.github.io/projects/</link>
       <pubDate>Mon, 06 Jan 2025 21:50:00 +0900</pubDate>
-      <guid>http://localhost:1313/projects/</guid>
+      <guid>https://fhrk-78.github.io/projects/</guid>
       <description>&lt;p&gt;私が作ったものを紹介するページです。&lt;/p&gt;
 &lt;h2 id=&#34;minecraft&#34;&gt;Minecraft&lt;/h2&gt;
 &lt;h3 id=&#34;escalatormc--spigot--121-&#34;&gt;EscalatorMC [ Spigot | ^1.21 ]&lt;/h3&gt;
@@ -65,7 +65,7 @@
 &lt;li&gt;&lt;a href=&#34;https://github.com/fhrk-78/escalatormc&#34;&gt;Github&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;askgiveop--spigot--121-&#34;&gt;AskGiveOp [ Spigot | ^1.21 ]&lt;/h3&gt;
-&lt;p&gt;&lt;img alt=&#34;AskGiveOp&#34; loading=&#34;lazy&#34; src=&#34;./images/ago.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;AskGiveOp&#34; loading=&#34;lazy&#34; src=&#34;https://fhrk-78.github.io/images/ago.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;このプラグインはユーザーをOPにする時に複数のOPからの承認が必要にするプラグインです。&lt;/p&gt;
 &lt;p&gt;※新しくサーバーを作成する場合はプラグインを入れる前に事前にOPを付与しておいてください。&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;config.yml&lt;/code&gt;から必要な最低承認数を設定できます。&lt;/p&gt;
@@ -75,7 +75,7 @@
 &lt;li&gt;&lt;a href=&#34;https://github.com/fhrk-78/askgiveop&#34;&gt;Github&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;commandblockscopes--spigot--120121-&#34;&gt;CommandBlockScopes [ Spigot | 1.20~1.21 ]&lt;/h3&gt;
-&lt;p&gt;&lt;img alt=&#34;CommandBlockScopes&#34; loading=&#34;lazy&#34; src=&#34;./images/cbs.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;CommandBlockScopes&#34; loading=&#34;lazy&#34; src=&#34;https://fhrk-78.github.io/images/cbs.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;コマンドブロックを配置した人を記録して実行された時その人として実行できます&lt;/p&gt;
 &lt;p&gt;(&lt;a href=&#34;https://github.com/mfnalex/CustomBlockData&#34;&gt;CustomBlockData&lt;/a&gt;のおかげで実現できました！)&lt;/p&gt;
 &lt;ul&gt;
@@ -84,27 +84,27 @@
 &lt;li&gt;&lt;a href=&#34;https://github.com/fhrk-78/CommandBlockScopes&#34;&gt;Github&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;safetywe--spigot--1204-&#34;&gt;SafetyWE [ Spigot | 1.20.4 ]&lt;/h3&gt;
-&lt;p&gt;&lt;img alt=&#34;SafetyWE&#34; loading=&#34;lazy&#34; src=&#34;./images/swe.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;SafetyWE&#34; loading=&#34;lazy&#34; src=&#34;https://fhrk-78.github.io/images/swe.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;あるマイクラ鯖で遊んでいる時にフラッグでWorldEditをDENYにしないとEngineHubのプラグイン:WorldEditで相手の土地も削れてしまう事が分かったので、それを防ぐためのプラグインです。&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/fhrk-78/SafetyWE/releases&#34;&gt;Download&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/fhrk-78/SafetyWE&#34;&gt;Github&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;マイクラ斜め線生成機diagonalline-generator--webtool-&#34;&gt;マイクラ斜め線生成機(DiagonalLine Generator) [ WebTool ]&lt;/h3&gt;
-&lt;p&gt;&lt;img alt=&#34;MC Diagonal Line generator&#34; loading=&#34;lazy&#34; src=&#34;./images/mdlg.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;MC Diagonal Line generator&#34; loading=&#34;lazy&#34; src=&#34;https://fhrk-78.github.io/images/mdlg.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://fhrk-78.github.io/mcdiagonal-line-generator/&#34;&gt;https://fhrk-78.github.io/mcdiagonal-line-generator/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;角度とグリッドから斜めの線を計算します。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/fhrk-78/mcdiagonal-line-generator&#34;&gt;Github&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;combine-from-dynmap--pythonscript-&#34;&gt;Combine From Dynmap [ PythonScript ]&lt;/h3&gt;
-&lt;p&gt;&lt;img alt=&#34;Combine From Dynmap&#34; loading=&#34;lazy&#34; src=&#34;./images/cfd.png&#34;&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img alt=&#34;Combine From Dynmap&#34; loading=&#34;lazy&#34; src=&#34;https://fhrk-78.github.io/images/cfd.png&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>First Post</title>
-      <link>http://localhost:1313/posts/first_post/</link>
+      <link>https://fhrk-78.github.io/posts/first_post/</link>
       <pubDate>Mon, 06 Jan 2025 21:30:17 +0900</pubDate>
-      <guid>http://localhost:1313/posts/first_post/</guid>
+      <guid>https://fhrk-78.github.io/posts/first_post/</guid>
       <description>&lt;p&gt;SSGはHugo、ThemeはPaperModの力を借りて作りました。&lt;/p&gt;
 &lt;table&gt;
   &lt;thead&gt;
