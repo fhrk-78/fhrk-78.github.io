@@ -1,4 +1,54 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on fhrk_のメモ帳</title><link>https://fhrk-78.github.io/posts/</link><description>Recent content in Posts on fhrk_のメモ帳</description><generator>Hugo -- 0.140.2</generator><language>ja</language><lastBuildDate>Tue, 07 Jan 2025 10:10:00 +0900</lastBuildDate><atom:link href="https://fhrk-78.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugoで詰まったことと解決方法</title><link>https://fhrk-78.github.io/posts/how2hugo/</link><pubDate>Tue, 07 Jan 2025 10:10:00 +0900</pubDate><guid>https://fhrk-78.github.io/posts/how2hugo/</guid><description>&lt;p>こんにちは、私がこのサイトを作る上でHugoで詰まったことを書いてます&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on fhrk_のメモ帳</title><link>https://fhrk-78.github.io/posts/</link><description>Recent content in Posts on fhrk_のメモ帳</description><generator>Hugo -- 0.140.2</generator><language>ja</language><lastBuildDate>Thu, 09 Jan 2025 13:00:00 +0900</lastBuildDate><atom:link href="https://fhrk-78.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>独自フォーマットでデータ保存、Spigotプラグイン開発</title><link>https://fhrk-78.github.io/posts/customblockscopes1/</link><pubDate>Thu, 09 Jan 2025 13:00:00 +0900</pubDate><guid>https://fhrk-78.github.io/posts/customblockscopes1/</guid><description>&lt;p>こんにちは&lt;/p>
+&lt;p>私は先日、CommandBlockScopesのv1.2をリリースしました。&lt;/p>
+&lt;p>具体的なアップデート内容は、いくつかのコマンドの追加と&lt;strong>OriginalFormat&lt;/strong>です。&lt;/p>
+&lt;p>OriginalFormatは、CommandBlockScopes独自のレジストリフォーマットです。&lt;/p>
+&lt;p>この記事では独自のフォーマットを実装するためのコードを雑に書いておきます。&lt;/p>
+&lt;h2 id="1-ファイル作成">1. ファイル作成&lt;/h2>
+&lt;p>ファイル作成には、java.io.Fileクラスを使いました。&lt;/p>
+&lt;p>プラグインのデータフォルダーは&lt;code>plugin.getDataFolder()&lt;/code>を使用して取得できるみたいです。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-java" data-lang="java">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">package&lt;/span> hoge.hoge.originalFormatTest;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">import&lt;/span> org.bukkit.plugin.java.JavaPlugin;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">import&lt;/span> java.io.File;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">import&lt;/span> java.io.IOException;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">import&lt;/span> java.nio.file.Files;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">import&lt;/span> java.nio.file.Path;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">import&lt;/span> java.nio.file.Paths;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">import&lt;/span> java.nio.file.StandardOpenOption;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">import&lt;/span> java.text.MessageFormat;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">import&lt;/span> java.util.HashMap;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">OriginalFormat&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">private&lt;/span> &lt;span style="color:#66d9ef">final&lt;/span> Path path;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#a6e22e">OriginalFormat&lt;/span>(JavaPlugin plugin) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// コンストラクタ&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// プラグインからデータフォルダーを取得&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> path &lt;span style="color:#f92672">=&lt;/span> Paths.&lt;span style="color:#a6e22e">get&lt;/span>(plugin.&lt;span style="color:#a6e22e">getDataFolder&lt;/span>().&lt;span style="color:#a6e22e">toString&lt;/span>(), &lt;span style="color:#e6db74">&amp;#34;data.txt&amp;#34;&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// 親ディレクトリを作成&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> File file &lt;span style="color:#f92672">=&lt;/span> path.&lt;span style="color:#a6e22e">toFile&lt;/span>();
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> file.&lt;span style="color:#a6e22e">getParentFile&lt;/span>().&lt;span style="color:#a6e22e">mkdirs&lt;/span>();
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// 初回起動時は新しく作る&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span> (&lt;span style="color:#f92672">!&lt;/span>file.&lt;span style="color:#a6e22e">exists&lt;/span>()) file.&lt;span style="color:#a6e22e">createNewFile&lt;/span>();
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="2-書き込みメソッド">2. 書き込みメソッド&lt;/h2>
+&lt;p>書き込みにはjava.nio.file.Filesを使いました。FileWriterを使う方法等もあるかもしれませんが、この記事ではFilesを使います。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-java" data-lang="java">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// ~省略~&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">OriginalFormat&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// ~省略~&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">set&lt;/span>(String key, String value) &lt;span style="color:#66d9ef">throws&lt;/span> IOException {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// 末尾に追加する&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Files.&lt;span style="color:#a6e22e">writeString&lt;/span>(path, MessageFormat.&lt;span style="color:#a6e22e">format&lt;/span>(&lt;span style="color:#e6db74">&amp;#34;{0},{1}\n&amp;#34;&lt;/span>, key, value), StandardOpenOption.&lt;span style="color:#a6e22e">APPEND&lt;/span>, StandardOpenOption.&lt;span style="color:#a6e22e">CREATE&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="3-読み込みメソッド">3. 読み込みメソッド&lt;/h2>
+&lt;p>書き込みとAPIを使いました。&lt;/p></description></item><item><title>Hugoで詰まったことと解決方法</title><link>https://fhrk-78.github.io/posts/how2hugo/</link><pubDate>Tue, 07 Jan 2025 10:10:00 +0900</pubDate><guid>https://fhrk-78.github.io/posts/how2hugo/</guid><description>&lt;p>こんにちは、私がこのサイトを作る上でHugoで詰まったことを書いてます&lt;/p>
 &lt;p>※&lt;strong>前提条件をよく読んでください&lt;/strong>&lt;/p>
 &lt;h2 id="前提条件">前提条件&lt;/h2>
 &lt;ul>

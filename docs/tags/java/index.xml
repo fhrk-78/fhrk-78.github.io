@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>備忘録 on fhrk_のメモ帳</title><link>https://fhrk-78.github.io/categories/%E5%82%99%E5%BF%98%E9%8C%B2/</link><description>Recent content in 備忘録 on fhrk_のメモ帳</description><generator>Hugo -- 0.140.2</generator><language>ja</language><lastBuildDate>Thu, 09 Jan 2025 13:00:00 +0900</lastBuildDate><atom:link href="https://fhrk-78.github.io/categories/%E5%82%99%E5%BF%98%E9%8C%B2/index.xml" rel="self" type="application/rss+xml"/><item><title>独自フォーマットでデータ保存、Spigotプラグイン開発</title><link>https://fhrk-78.github.io/posts/customblockscopes1/</link><pubDate>Thu, 09 Jan 2025 13:00:00 +0900</pubDate><guid>https://fhrk-78.github.io/posts/customblockscopes1/</guid><description>&lt;p>こんにちは&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Java on fhrk_のメモ帳</title><link>https://fhrk-78.github.io/tags/java/</link><description>Recent content in Java on fhrk_のメモ帳</description><generator>Hugo -- 0.140.2</generator><language>ja</language><lastBuildDate>Thu, 09 Jan 2025 13:00:00 +0900</lastBuildDate><atom:link href="https://fhrk-78.github.io/tags/java/index.xml" rel="self" type="application/rss+xml"/><item><title>独自フォーマットでデータ保存、Spigotプラグイン開発</title><link>https://fhrk-78.github.io/posts/customblockscopes1/</link><pubDate>Thu, 09 Jan 2025 13:00:00 +0900</pubDate><guid>https://fhrk-78.github.io/posts/customblockscopes1/</guid><description>&lt;p>こんにちは&lt;/p>
 &lt;p>私は先日、CommandBlockScopesのv1.2をリリースしました。&lt;/p>
 &lt;p>具体的なアップデート内容は、いくつかのコマンドの追加と&lt;strong>OriginalFormat&lt;/strong>です。&lt;/p>
 &lt;p>OriginalFormatは、CommandBlockScopes独自のレジストリフォーマットです。&lt;/p>
@@ -48,37 +48,4 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="3-読み込みメソッド">3. 読み込みメソッド&lt;/h2>
-&lt;p>書き込みとAPIを使いました。&lt;/p></description></item><item><title>Hugoで詰まったことと解決方法</title><link>https://fhrk-78.github.io/posts/how2hugo/</link><pubDate>Tue, 07 Jan 2025 10:10:00 +0900</pubDate><guid>https://fhrk-78.github.io/posts/how2hugo/</guid><description>&lt;p>こんにちは、私がこのサイトを作る上でHugoで詰まったことを書いてます&lt;/p>
-&lt;p>※&lt;strong>前提条件をよく読んでください&lt;/strong>&lt;/p>
-&lt;h2 id="前提条件">前提条件&lt;/h2>
-&lt;ul>
-&lt;li>Github Pages&lt;/li>
-&lt;li>Theme: PaperMod&lt;/li>
-&lt;li>Hugo v0.140.2&lt;/li>
-&lt;/ul>
-&lt;h2 id="cssが適用されない">CSSが適用されない&lt;/h2>
-&lt;p>&lt;code>Hugo.yaml&lt;/code>に&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yaml" data-lang="yaml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">parans&lt;/span>:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">assets&lt;/span>:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">disableFingerprinting&lt;/span>: &lt;span style="color:#66d9ef">true&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="toc目次を追加する">ToC(目次)を追加する&lt;/h2>
-&lt;p>記事の先頭に&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yaml" data-lang="yaml">&lt;span style="display:flex;">&lt;span>---
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">~略~&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">ShowToc&lt;/span>: &lt;span style="color:#66d9ef">true&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">~略~&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>---
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="サイトの言語を設定する">サイトの言語を設定する&lt;/h2>
-&lt;p>私は&lt;code>languageCode&lt;/code>というパラメータにja-jpを設定して「あれ、適用されないな」とか言ってました&lt;/p>
-&lt;p>&lt;code>Hugo.yaml&lt;/code>に&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yaml" data-lang="yaml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">DefaultContentLanguage&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;ja&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">languages&lt;/span>:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">ja&lt;/span>:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">languageName&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;Japanese&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">weight&lt;/span>: &lt;span style="color:#ae81ff">10&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="docsに出力したい">&lt;code>docs/&lt;/code>に出力したい&lt;/h2>
-&lt;p>&lt;code>Hugo.yaml&lt;/code>に&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yaml" data-lang="yaml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">publishDir&lt;/span>: &lt;span style="color:#ae81ff">docs&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="その他">その他&lt;/h2>
-&lt;p>&lt;code>static/&lt;/code>フォルダは&lt;code>public/&lt;/code>の中にそのまま配置されるようですので、心配しなくても大丈夫です。&lt;/p></description></item></channel></rss>
+&lt;p>書き込みとAPIを使いました。&lt;/p></description></item></channel></rss>
